@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "761810280931",
+    "firebase_url": "https://lc-musicsheet-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "lc-musicsheet",
+    "storage_bucket": "lc-musicsheet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761810280931:android:2afba837d48138fdb6c0d6",
+        "android_client_info": {
+          "package_name": "tdtu.mobile_dev_assignment.lc_assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761810280931-8dn5fr4r4nbrkl4jeavc3ses72t422al.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnAmPCarUdxettM_-ahA6snovRwj7Kjsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761810280931-8dn5fr4r4nbrkl4jeavc3ses72t422al.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/brown"
+        android:text="Filter"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bungee_regular"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/brown"
+        android:text="Sort by"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="0dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        android:layout_marginHorizontal="20dp"
+        app:boxBackgroundColor="#B3B3B3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView android:id="@+id/sortByAC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/brown"
+        android:text="Category"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        >
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true">
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/brown"
+        android:text="Rate"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+
+    <RatingBar
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/rateStart"
+        android:progressTint="@color/orange"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/brown"
+        android:rating="0"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:backgroundTint="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:stepSize="0.5"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:text="Price"
+        android:textColor="@color/brown"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.slider.Slider
+
+        android:id="@+id/priceSlider"
+        android:layout_width="match_parent"
+        android:valueFrom="0.0"
+        android:valueTo="1000.0"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/applyFilterBtn"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:cornerRadius="5dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Apply Filter"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
